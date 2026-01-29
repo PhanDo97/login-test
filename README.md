@@ -113,30 +113,29 @@ GET    /api/me             # ユーザー情報を取得
 8. ユーザー情報を表示
 
 
-
-##  Tech Stack
+##  使用技術
 
 ### バックエンド
-| Technology | Version | Purpose              |
-|------------|---------|----------------------|
-| Python     | 3.8+    | Programming language |
-| FastAPI    | 0.104.1 | Web framework        |
-| Uvicorn    | 0.24    | ASGI server          |
-| PyJWT      | 2.8     | JWT handling         |
-| Pydantic   | 2.5     | Data validation      |
+| 技術 | バージョン | 用途 |
+|------|------------|------|
+| Python | 3.8+ | 実装言語 |
+| FastAPI | 0.104.1 | Webフレームワーク |
+| Uvicorn | 0.24 | ASGIサーバー |
+| PyJWT | 2.8 | JWTの発行・検証 |
+| Pydantic | 2.5 | 入力データ検証 |
 
 ### フロントエンド
-| Technology       | Purpose       |
-|------------------|---------------|
-| HTML5            | Structure     |
-| CSS3             | Styling       |
-| JavaScript (ES6+)| Logic         |
-| Fetch API        | HTTP requests |
-| LocalStorage     | Token storage |
+| 技術 | 用途 |
+|------|------|
+| HTML5 | 画面構造 |
+| CSS3 | スタイリング |
+| JavaScript（ES6+） | 画面ロジック |
+| Fetch API | API通信 |
+| LocalStorage | トークン保存 |
 
-##  Configuration
+##  設定
 
-### Backend (.env)
+### バックエンド (.env)
 ```env
 PROJECT_NAME=Login System API
 DEBUG=True
@@ -153,7 +152,7 @@ DATABASE_URL=sqlite:///./test.db
 ALLOWED_ORIGINS=["http://localhost:3000"]
 ```
 
-### Frontend (config.js)
+### フロントエンド (config.js)
 ```javascript
 const API_CONFIG = {
     // Base URL of the Backend API
