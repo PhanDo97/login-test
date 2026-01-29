@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Dashboard after login">
+    <title>Dashboard | Login System</title>
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="../assets/css/style.css">
+
+</head>
+<body>
+    <div class="dashboard-container">
+        <div class="header">
+            <h1>🏠 Dashboard</h1>
+            <div class="user-info">
+                <div class="user-details">
+                    <div class="user-name" id="userName">Loading...</div>
+                    <div class="user-email" id="userEmail">Loading...</div>
+                </div>
+                <button class="btn btn-danger" id="logoutBtn">Logout</button>
+            </div>
+        </div>
+
+        <div class="content">
+            <div class="welcome-message">
+                <h2>Welcome to the Dashboard! 🎉</h2>
+                <p>You have successfully logged into the system</p>
+            </div>
+
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <h3>Total Users</h3>
+                    <div class="stat-value">1,234</div>
+                    <p>↑ 12% compared to last month</p>
+                </div>
+
+                <div class="stat-card">
+                    <h3>Active Projects</h3>
+                    <div class="stat-value">42</div>
+                    <p>5 new projects this week</p>
+                </div>
+
+                <div class="stat-card">
+                    <h3>Revenue</h3>
+                    <div class="stat-value">$12.5K</div>
+                    <p>↑ 8% compared to last week</p>
+                </div>
+
+                <div class="stat-card">
+                    <h3>Completed Tasks</h3>
+                    <div class="stat-value">89%</div>
+                    <p>156/175 tasks completed</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="../assets/js/config.js"></script>
+    <script src="../assets/js/utils.js"></script>
+    <script src="../assets/js/api.js"></script>
+    <script src="../assets/js/dashboard.js"></script>
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Register New Account">
+    <title>Sign up</title>
+    <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body class="login-page">
+    <div class="login-container">
+        <div class="login-header">
+            <h1>Sign up</h1>
+        </div>
+        <div class="card">
+            <div class="card-body">
+                <div id="alertBox" class="alert"></div>
+                <form id="registerForm">
+                    <div class="form-group">
+                        <label for="regUsername">Username</label>
+                        <input type="text" id="regUsername" name="regUsername" class="form-control" required placeholder="Choose a username">
+                    </div>
+                    <div class="form-group">
+                        <label for="regEmail">Email</label>
+                        <input type="email" id="regEmail" name="regEmail" class="form-control" required placeholder="Your email">
+                    </div>
+                    <div class="form-group">
+                        <label for="regPassword">Password</label>
+                        <input type="password" id="regPassword" name="regPassword" class="form-control" required placeholder="Choose a password">
+                    </div>
+                    <div class="form-group">
+                        <label for="regConfirmPassword">Confirm Password</label>
+                        <input type="password" id="regConfirmPassword" name="regConfirmPassword" class="form-control" required placeholder="Confirm your password">
+                    </div>
+                    <button type="submit" class="btn btn-success" id="registerBtn" style="width: 100%; margin-top: 10px;">Sign up</button>
+                </form>
+                <div style="text-align:center; margin-top: 16px;">
+                    <a href="login.html" class="btn btn-link">Back to login</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="../assets/js/config.js"></script>
+    <script src="../assets/js/utils.js"></script>
+    <script src="../assets/js/api.js"></script>
+    <script src="../assets/js/register.js"></script>
+</body>
+</html>
