@@ -43,7 +43,8 @@ cd backend-api
 
 # 依存関係インストール
 pip install -r requirements.txt
-
+# データーベース作成
+python -m app.database
 # サーバーを起動する
 uvicorn main:app --reload
 ```
